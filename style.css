@@ -1,0 +1,266 @@
+body{
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    
+}
+header{
+    background-color:#35424a;
+    min-height:70px ;
+    border-bottom: 3px solid #e8491d;
+}
+.container,.container1{
+width: 80%;
+margin:auto;
+overflow: hidden;
+position: relative;
+}
+/* LOGO */
+header .container #branding{
+    float: left;
+}
+header .container #branding h1{
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 35px;
+    margin-top: 15px;
+    color: #e8491d;
+}
+#highlight{
+    color: #ffffff;
+}
+/* NAV LINKS */
+header .container nav{
+    /* clear: both; */
+    float: right;
+    margin-top: 25px;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+header a:hover{
+font-size:18px;
+font-weight: bold;
+}
+header li{
+    float: left;
+    text-decoration: none;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+/* CURRENT-CLASS */
+.current{
+    background-color:#e8491d;
+}
+
+
+/* ABOUT-SHOWCASE */
+#showCase{
+    background: url("./img/showcase.jpg");
+    min-height: 500px;
+    background-position-y:-400px;
+    background-repeat: no-repeat; 
+    text-align: center;
+    position: relative;
+}
+ #picport{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    opacity: 0.6;
+    border-radius: 50%;
+}
+#showCase  h1{
+    clear: both;
+    overflow: none;
+    /* float: left; */
+    font-size: 55px;
+    margin-top:10px;
+    /* text-align: center; */
+    font-family: 'Zilla Slab Highlight', cursive;
+    color:#e8491d;
+    /* background-color: rgba(45, 44, 44, 0.45); */
+    
+}
+#showCase aside {
+    position: relative;
+    clear: both;
+    text-align: center;
+    float: right;
+    margin-top: 10px;
+   
+}
+#showCase h3{
+    margin-bottom: 20px;
+    font-size:20px; 
+    font-family: 'Zilla Slab Highlight', cursive;
+    color: #35424a;    
+}
+#showCase a img{
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+}
+#showCase a img:hover{
+    opacity: 1;
+    border: 2px solid #e8491d;
+    border-radius: 50%;
+
+}
+
+/* BOXES */
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 90px;
+}
+.box h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    background-color: #e8491d;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* GALLERY */
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+
+/* CONTACT */
+button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#showCase1{
+    background: url("./img/first.jpg");
+    min-height: 500px;
+    background-position-y:-180px;
+    background-repeat: no-repeat; 
+    text-align: center;
+}
+#showCase1  h1{
+    clear: both;
+    overflow: none;
+    /* float: left; */
+    font-size: 55px;
+    margin-top:10px;
+    /* text-align: center; */
+    font-family: 'Zilla Slab Highlight', cursive;
+    color:#e8491d;
+    /* background-color: rgba(45, 44, 44, 0.45); */
+    
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+textarea[type=text] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    /* PORTFOLIO */
+    .responsive {
+        width: 100%;
+    }
+    /* CONTACT */
+    button{
+        width: 100%;
+    }
+
+    textarea[type=text] {
+        width: 100%;
+    }
+    input[type=text] {
+        width: 100%;
+    }
+
+/* SOLCIAL */
+    #showCase a img{
+        width: 40px;
+        height: 40px;
+      
+    }
+
+/* BRANDING */
+header #branding,header nav, header nav li,#showCase a,#boxes .box{
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+
+/* NAV */
+header a:hover{
+    font-size:15px;
+    font-weight: bold;
+    }
+    header{
+        padding-bottom: 15px;
+    }
+
+    /* BOXES */
+    #boxes .box{
+        display: block;
+    }
+
+}
+
